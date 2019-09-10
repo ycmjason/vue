@@ -139,7 +139,7 @@ export interface RenderContext<Props=DefaultProps> {
   slots(): any;
   data: VNodeData;
   parent: Vue;
-  listeners: { [key: string]: Function | Function[] };
+  listeners: { [key: string]?: Function | Function[] };
   scopedSlots: { [key: string]: NormalizedScopedSlot };
   injections: any
 }
